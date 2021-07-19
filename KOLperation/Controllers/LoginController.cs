@@ -23,8 +23,8 @@ namespace KOLperation.Controllers
         private readonly JwtAuthUtil jwtAuthUtil = new JwtAuthUtil();
         private readonly string kol = ConfigurationManager.AppSettings["iamkol"].ToString();
         private readonly string url = ConfigurationManager.AppSettings["ourUploadUrl"].ToString();
-        protected string GoogleClientId = "1080552189981-p7jmrli2d0e70duommt75cq638g6r708.apps.googleusercontent.com";
-        protected string GoogleClientSecret = "vpASVHeHh5REgdFJzU4u8htp";
+        protected string GoogleClientId = ConfigurationManager.AppSettings["GoogleClientId"].ToString();
+        protected string GoogleClientSecret = ConfigurationManager.AppSettings["GoogleClientSecret"].ToString();
         protected string GoogleRedirectUrl = "https://kolperation.rocket-coding.com/test.html";
         //protected string GoogleRedirectUrl = "https://kolperation.rocket-coding.com/index.html/firmplat/msg";
 
